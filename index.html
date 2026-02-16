@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Harish Reddy Duggempudi – Microsoft Student Ambassador GOLD, Founder of Student Nexus, Community Builder and Speaker in AI, Cloud & Technology.">
+<meta name="theme-color" content="#050505">
+<meta name="keywords" content="Microsoft Ambassador, Founder, AI, Cloud, Community Builder, Developer, Azure Cloud, Microsoft Fabric, Gen-AI, Event Management, Public Speaking">
+<meta name="author" content="Harish Reddy Duggempudi — Microsoft Student Ambassador GOLD">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://harishreddy.me">
+
+<!-- OPEN GRAPH TAGS -->
+<meta property="og:title" content="Harish Reddy Duggempudi | Founder • Microsoft Ambassador GOLD">
+<meta property="og:description" content="Community Builder • Speaker • Founder empowering students through AI, Cloud, and innovation-driven learning.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://harishreddy.me">
+<meta property="og:image" content="https://harishreddy.me/images/harish-reddy.jpeg">
+<meta property="og:image:alt" content="Harish Reddy Duggempudi portrait">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Harish Reddy Duggempudi | Founder • Microsoft Ambassador GOLD">
+<meta name="twitter:description" content="Community Builder • Speaker • Founder empowering students through AI, Cloud, and innovation-driven learning.">
+<meta name="twitter:image" content="https://harishreddy.me/images/harish-reddy.jpeg">
+<meta name="twitter:image:alt" content="Harish Reddy Duggempudi portrait">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%236366f1' width='100' height='100'/><text x='50' y='65' font-size='60' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial'>H</text></svg>">
+<link rel="apple-touch-icon" href="images/favicon.png">
+
+<title>Harish Reddy Duggempudi — Microsoft Student Ambassador GOLD | Founder @ Student Nexus</title>
+
+<!-- PERFORMANCE -->
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="preload" href="images/harish-reddy.jpeg" as="image">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root{
+--bg:#050505;
+--surface:rgba(15,15,15,.65);
+--border:rgba(255,255,255,.06);
+--accent:#6366f1;
+--fabric:#0d9488;
+--gold:#d97706;
+--text:#ededed;
+--muted:#a1a1aa;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{
+scroll-behavior:smooth;
+}
+
+/* ACCESSIBILITY */
+*:focus-visible{
+outline:2px solid var(--accent);
+outline-offset:2px;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+letter-spacing:0.01em;
+line-height:1.55;
+}
+
+/* BACKGROUND */
+.gradient-orb{
+position:fixed;
+width:500px;
+height:500px;
+border-radius:50%;
+filter:blur(85px);
+opacity:.14;
+z-index:-2;
+animation:float 18s infinite ease-in-out;
+will-change:transform;
+}
+.orb1{background:#6366f1;top:-120px;left:-120px;}
+.orb2{background:#0d9488;bottom:-120px;right:-120px;}
+.orb3{background:#d97706;top:40%;left:40%;}
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-60px)}
+}
+.noise{
+position:fixed;
+width:100%;
+height:100%;
+background:url('https://grainy-gradients.vercel.app/noise.svg');
+opacity:.05;
+pointer-events:none;
+z-index:999;
+}
+
+#progress{
+position:fixed;
+top:0;
+left:0;
+height:3px;
+width:0%;
+background:var(--accent);
+z-index:3000;
+transition:width .1s linear;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(8px);
+background:rgba(0,0,0,.5);
+border-bottom:1px solid var(--border);
+z-index:1000;
+}
+nav.scrolled{
+padding:12px 40px;
+background:rgba(0,0,0,.75);
+}
+.logo{font-family:'JetBrains Mono';font-weight:700}
+.tag{
+font-size:.75rem;
+padding:5px 12px;
+border-radius:20px;
+border:1px solid var(--border);
+margin-left:10px;
+color:var(--gold);
+}
+
+/* HERO */
+.hero{
+min-height:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:100px 5% 60px;
+overflow:visible; /* IMPORTANT */
+position:relative;
+z-index:2;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+width:400px;
+height:400px;
+background:radial-gradient(circle, var(--accent), transparent);
+filter:blur(120px);
+opacity:.3;
+right:0;
+top:20%;
+z-index:-1;
+pointer-events:none;
+animation:floatGlow 15s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-30px); }
+}
+
+.hero-sub{
+font-family:'JetBrains Mono';
+color:var(--accent);
+margin-bottom:20px;
+}
+.hero h1{
+font-size:clamp(2.6rem,7.5vw,6.5rem);
+line-height:.9;
+font-weight:800;
+letter-spacing:-.04em;
+background:linear-gradient(to bottom right,#fff,#666);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.hero h1 span{
+display:block;
+background:linear-gradient(90deg,#6366f1,#0d9488);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.hero p{
+max-width:650px;
+margin-top:26px;
+color:var(--muted);
+line-height:1.8;
+font-size:1.1rem;
+}
+
+/* SECTIONS */
+.section{
+padding:130px 5%;
+max-width:1600px;
+margin:auto;
+position:relative;
+z-index:2;
+}
+.label{
+font-family:'JetBrains Mono';
+color:var(--muted);
+margin-bottom:25px;
+display:block;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+.card{
+background:var(--surface);
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+border:1px solid var(--border);
+border-radius:18px;
+padding:20px;
+transition:transform .35s ease, box-shadow .35s ease;
+opacity: 1;
+transform:translateZ(0);
+will-change:transform;
+}
+.card:hover{
+transform:translateY(-6px);
+border-color:rgba(255,255,255,.15);
+}
+.card h3{margin:8px 0;font-size:1.4rem}
+.card p{color:var(--muted);line-height:1.6;font-size:.9rem}
+.expertise-icon,.initiative-icon,.project-icon{
+display:flex;align-items:center;justify-content:center;width:70px;height:70px;border-radius:12px;margin-bottom:15px;font-size:2.5rem;background:rgba(99,102,241,.15);border:1.5px solid rgba(99,102,241,.3);
+transition:all .3s ease;}
+.expertise-icon:hover,.initiative-icon:hover,.project-icon:hover{
+background:rgba(99,102,241,.25);border-color:rgba(99,102,241,.6);transform:scale(1.05);}
+.badge{
+font-size:.72rem;
+font-family:'JetBrains Mono';
+padding:5px 10px;
+border:1px solid var(--border);
+border-radius:6px;
+display:inline-block;
+margin-bottom:6px;
+}
+.span2{grid-column:span 2}
+
+/* EVENTS ROADMAP - CLEAN 3-LANE DESIGN */
+.events-roadmap{
+position:relative;
+max-width:1100px;
+margin:0 auto;
+padding:40px 0;
+}
+.events-roadmap .road-line,
+.events-roadmap .road-lane{
+display:none;
+}
+.roadmap-svg{
+display:none;
+}
+.road-path{
+display:none;
+}
+.road-dashes{
+display:none;
+}
+.roadmap-nodes{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+gap:40px 32px;
+width:100%;
+}
+.roadmap-node{
+position:relative;
+width:100%;
+}
+.node-pin{
+position:absolute;
+left:12px;
+top:12px;
+width:32px;
+height:32px;
+border-radius:8px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:var(--accent);
+color:#fff;
+font-family:'JetBrains Mono';
+font-size:.7rem;
+font-weight:700;
+z-index:2;
+}
+.roadmap-node:nth-child(3n+1) .node-pin{background:var(--accent)}
+.roadmap-node:nth-child(3n+2) .node-pin{background:var(--fabric)}
+.roadmap-node:nth-child(3n) .node-pin{background:var(--gold)}
+.node-card{
+position:relative;
+width:100%;
+padding:50px 22px 20px;
+background:rgba(8,8,8,.92);
+border:1px solid var(--border);
+border-radius:14px;
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+box-shadow:0 0 0 1px rgba(255,255,255,.04), 0 8px 25px rgba(0,0,0,.45);
+transition:all .3s ease;
+}
+.node-card:hover{
+background:rgba(8,8,8,.98);
+border-color:rgba(255,255,255,.2);
+transform:translateY(-4px);
+}
+.roadmap-node.is-above .node-card{
+transform:none;
+}
+.roadmap-node.is-below .node-card{
+transform:none;
+}
+.node-date{
+font-family:'JetBrains Mono';
+font-size:.7rem;
+color:var(--muted);
+margin-bottom:8px;
+text-transform:uppercase;
+letter-spacing:0.5px;
+}
+.node-title{
+font-size:0.95rem;
+font-weight:700;
+margin:0 0 10px 0;
+line-height:1.4;
+color:#f5f5f5;
+}
+
+/* GOLD MILESTONE CARD */
+.gold-milestone-card {
+grid-column: 1 / -1;
+margin-bottom:30px;
+}
+.gold-milestone-card .node-card{
+background:linear-gradient(135deg,rgba(217,119,6,.12) 0%,rgba(217,119,6,.05) 100%);
+border:2px solid var(--gold);
+box-shadow:0 0 30px rgba(217,119,6,.25), 0 8px 25px rgba(0,0,0,.4);
+padding:52px 30px 28px;
+}
+.gold-milestone-card .node-pin{
+background:var(--gold);
+width:40px;
+height:40px;
+font-size:.85rem;
+box-shadow:0 0 20px var(--gold);
+left:14px;
+top:14px;
+}
+.gold-milestone-card .node-title{
+font-size:1.4rem;
+color:var(--gold);
+margin-bottom:8px;
+}
+.gold-milestone-card .node-date{
+color:var(--gold);
+font-weight:700;
+font-size:.75rem;
+}
+.node-location{
+font-size:.72rem;
+color:rgba(255,255,255,.65);
+margin-top:8px;
+font-family:'JetBrains Mono';
+letter-spacing:0.3px;
+}
+
+/* EVENTS ROADMAP RESPONSIVE */
+@media(max-width:768px){
+.roadmap-nodes{
+grid-template-columns:1fr;
+gap:35px;
+}
+.node-card{
+padding:46px 20px 18px;
+}
+.gold-milestone-card{
+margin-bottom:10px;
+}
+.gold-milestone-card .node-card{
+padding:50px 24px 22px;
+}
+.node-pin{
+width:28px;
+height:28px;
+font-size:.65rem;
+left:10px;
+top:10px;
+}
+.gold-milestone-card .node-pin{
+width:36px;
+height:36px;
+font-size:.8rem;
+}
+}
+
+/* IMAGE SLOTS */
+.leadership-image img{
+width:100%;
+height:100%;
+object-fit:contain;
+border-radius:10px;
+}
+.cert-img{
+width:90px;
+height:90px;
+object-fit:contain;
+margin-bottom:12px;
+}
+.project-img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:14px;
+margin-bottom:15px;
+transition:transform .5s ease;
+}
+.card:hover .project-img{
+transform:scale(1.05);
+}
+.event-img{
+width:100%;
+height:120px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+.achievement-img{
+width:120px;
+height:120px;
+object-fit:contain;
+margin-bottom:18px;
+border-radius:10px;
+background:rgba(255,255,255,.08);
+padding:5px;
+border:1px solid var(--border);
+opacity:1;
+box-shadow:0 0 20px rgba(99,102,241,.3);
+transition:all .4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.achievement-img:hover{
+transform:translateY(-8px) scale(1.05);
+}
+.testimonial-avatar{
+width:60px;
+height:60px;
+border-radius:50%;
+object-fit:cover;
+}
+.edu-logo{
+width:120px;
+height:120px;
+object-fit:contain;
+margin-bottom:18px;
+border-radius:10px;
+background:rgba(255,255,255,.08);
+padding:5px;
+border:1px solid var(--border);
+}
+.footer-avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin:0 auto 30px;
+display:block;
+border:3px solid var(--border);
+box-shadow:0 8px 30px rgba(0,0,0,.4);
+}
+
+/* LEADERSHIP VERTICAL LAYOUT */
+.leadership-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.leadership-card{
+display:flex;
+flex-direction:row;
+align-items:flex-start;
+gap:20px;
+padding:25px;
+background:var(--surface);
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+border:1px solid var(--border);
+border-radius:18px;
+overflow:hidden;
+transition:.4s;
+}
+
+.leadership-card:hover{
+transform:translateY(-4px);
+border-color:rgba(255,255,255,.15);
+}
+
+.leadership-image{
+width:120px;
+height:120px;
+flex-shrink:0;
+background:rgba(255,255,255,.08);
+border-radius:10px;
+border:1px solid var(--border);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2.5rem;
+overflow:hidden;
+padding:5px;
+}
+
+.leadership-content{
+flex:1;
+}
+
+.leadership-title{
+font-size:1.3rem;
+font-weight:700;
+margin:0 0 5px 0;
+color:#fff;
+}
+
+.leadership-org{
+font-size:.9rem;
+color:var(--muted);
+margin:0 0 5px 0;
+font-family:'JetBrains Mono';
+}
+
+.leadership-date{
+font-size:.85rem;
+color:var(--muted);
+margin:0 0 12px 0;
+}
+
+.leadership-content p{
+font-size:.95rem;
+color:var(--muted);
+line-height:1.6;
+margin:0;
+}
+
+.leadership-badge{
+font-size:.7rem;
+font-family:'JetBrains Mono';
+padding:4px 10px;
+border:1px solid var(--border);
+border-radius:4px;
+display:inline-block;
+margin-bottom:8px;
+margin-right:8px;
+}
+
+@media(max-width:768px){
+.leadership-card{
+flex-direction:row;
+}
+
+.leadership-image{
+width:120px;
+height:120px;
+font-size:2.2rem;
+}
+
+.leadership-title{
+font-size:1.1rem;
+}
+}
+
+/* IMPACT */
+.impact-number{
+font-size:2.5rem;
+font-weight:800;
+color:var(--accent);
+}
+
+/* FEATURED PROJECTS */
+.projects-grid .card{
+display:flex;
+flex-direction:column;
+height:100%;
+}
+.projects-grid .card span{
+margin-top:auto;
+}
+
+/* PROJECT LINKS */
+.project-links{
+display:flex;
+gap:12px;
+margin-top:15px;
+padding-top:15px;
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+.project-link{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:36px;
+height:36px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+text-decoration:none;
+color:#fff;
+transition:all .3s ease;
+font-size:1rem;
+}
+
+.project-link:hover{
+transform:translateY(-2px);
+border-color:currentColor;
+}
+
+.project-link.live{
+color:var(--accent);
+border-color:rgba(99,102,241,.3);
+background:rgba(99,102,241,.08);
+}
+
+.project-link.live:hover{
+background:rgba(99,102,241,.15);
+}
+
+.project-link.github{
+color:var(--fabric);
+border-color:rgba(13,148,136,.3);
+background:rgba(13,148,136,.08);
+}
+
+.project-link.github:hover{
+background:rgba(13,148,136,.15);
+}
+
+/* CARD ICONS */
+.card-icon{
+width:120px;
+height:120px;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:rgba(255,255,255,.08);
+border:1px solid var(--border);
+color:#fff;
+font-size:3rem;
+margin-bottom:18px;
+padding:5px;
+}
+.card-logo{
+width:120px;
+height:120px;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:rgba(255,255,255,.08);
+border:1px solid var(--border);
+color:var(--gold);
+font-family:'JetBrains Mono';
+font-weight:700;
+letter-spacing:.08em;
+font-size:1.5rem;
+margin-bottom:18px;
+padding:5px;
+}
+.card-logo.gold{
+color:var(--gold);
+}
+.card-logo.sa{
+color:var(--accent);
+}
+
+/* SKILLS SECTION */
+.skills{
+padding:60px 0;
+border-top:1px solid var(--border);
+border-bottom:1px solid var(--border);
+white-space:nowrap;
+overflow:hidden;
+}
+.skills-track{
+display:inline-block;
+animation:slide 50s linear infinite;
+}
+.skill{
+font-size:2.5rem;
+font-weight:800;
+opacity:.2;
+margin-right:40px;
+}
+.skill.active{opacity:1;color:var(--accent)}
+@keyframes slide{
+from{transform:translateX(0)}
+to{transform:translateX(-50%)}
+}
+
+/* FOOTER */
+footer{
+padding:100px 5%;
+text-align:center;
+}
+
+/* SOCIAL ICONS */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all .3s ease;
+  text-decoration: none;
+  border: 1px solid;
+}
+
+.social-icon:hover {
+  transform: scale(1.15) translateY(-5px);
+}
+
+/* LINKEDIN ICON */
+.social-icon.linkedin {
+  background: rgba(99,102,241,0.2);
+  border-color: rgba(99,102,241,0.5);
+  color: var(--accent);
+}
+
+.social-icon.linkedin:hover {
+  background: rgba(99,102,241,0.4);
+}
+
+/* GITHUB ICON */
+.social-icon.github {
+  background: rgba(13,148,136,0.2);
+  border-color: rgba(13,148,136,0.5);
+  color: var(--fabric);
+}
+
+.social-icon.github:hover {
+  background: rgba(13,148,136,0.4);
+}
+
+/* EMAIL ICON */
+.social-icon.email {
+  background: rgba(217,119,6,0.2);
+  border-color: rgba(217,119,6,0.5);
+  color: var(--gold);
+}
+
+.social-icon.email:hover {
+  background: rgba(217,119,6,0.4);
+}
+
+/* TWITTER ICON */
+.social-icon.twitter {
+  background: rgba(99,102,241,0.2);
+  border-color: rgba(99,102,241,0.5);
+  color: var(--accent);
+}
+
+.social-icon.twitter:hover {
+  background: rgba(99,102,241,0.4);
+}
+
+/* INSTAGRAM ICON */
+.social-icon.instagram {
+  background: rgba(217,119,6,0.2);
+  border-color: rgba(217,119,6,0.5);
+  color: var(--gold);
+}
+
+.social-icon.instagram:hover {
+  background: rgba(217,119,6,0.4);
+}
+
+.btn{
+display:inline-block;
+padding:18px 50px;
+background:#fff;
+color:#000;
+font-weight:700;
+border-radius:100px;
+text-decoration:none;
+transition:.3s;
+}
+.btn:hover{background:var(--accent);color:#fff}
+
+/* PREMIUM SCROLL REVEAL */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  will-change: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1 !important;
+}
+
+/* SMOOTH CARD ANIMATIONS */
+.card[data-aos="fade-up"] {
+  transform: translateY(40px);
+}
+
+.card[data-aos="fade-up"].aos-animate {
+  transform: translateY(0) !important;
+}
+
+/* ENHANCED TIMELINE */
+.timeline-container {
+  position: relative;
+  padding-left: 10px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(255,255,255,.1);
+}
+
+.timeline-dot {
+  transition: all .3s ease;
+}
+
+.timeline-dot:hover {
+  transform: scale(1.3);
+}
+
+/* TESTIMONIALS */
+.testimonials-section{
+margin:40px 5%;
+}
+
+/* CAROUSEL */
+.testimonials-carousel{
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding:10px 0;
+margin:0 -10px;
+padding-right:20px;
+padding-left:20px;
+scroll-snap-type:x mandatory;
+}
+
+.testimonials-carousel::-webkit-scrollbar{
+display:none;
+}
+
+.testimonials-carousel{
+-ms-overflow-style:none;
+scrollbar-width:none;
+}
+
+.testimonial-card{
+flex:0 0 calc(33.333% - 14px);
+min-width:300px;
+}
+
+@media(max-width:1024px){
+.testimonial-card{
+flex:0 0 calc(50% - 10px);
+}
+}
+
+@media(max-width:768px){
+.testimonial-card{
+flex:0 0 100%;
+}
+}
+
+/* HERO SUBTITLE ANIMATION */
+.hero-sub {
+  animation: fadeInUp .8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BUTTON HOVER EFFECTS */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.2);
+  transition: .3s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+@media(max-width:1024px){
+.grid{
+grid-template-columns:1fr;
+gap:25px;
+}
+.span2{grid-column:span 1}
+.hero h1{font-size:4rem}
+.leadership-card{
+flex-direction:column;
+}
+.leadership-image{
+width:120px;
+height:120px;
+}
+}
+
+@media (prefers-reduced-motion: reduce){
+*{
+animation:none !important;
+transition:none !important;
+}
+}
+
+/* HERO IMAGE PREMIUM SHADOW - FINAL FIX */
+.hero-image{
+position:relative;
+width:350px;
+height:350px;
+border-radius:30px;
+overflow:visible;
+border:1px solid var(--border);
+background:var(--surface);
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+transition:.25s ease;
+isolation:isolate;
+will-change:transform;
+transform-style:preserve-3d;
+}
+
+/* IMAGE */
+.hero-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:30px;
+position:relative;
+z-index:3;
+}
+
+/* CINEMATIC GLOW SHADOW */
+.hero-image::before{
+content:'';
+position:absolute;
+top:50%;
+left:50%;
+width:500px;
+height:500px;
+transform:translate(-50%,-50%);
+background:radial-gradient(
+circle,
+rgba(99,102,241,0.6) 0%,
+rgba(13,148,136,0.4) 40%,
+rgba(0,0,0,0) 75%
+);
+filter:blur(90px);
+opacity:.85;
+z-index:1;
+pointer-events:none;
+}
+
+/* EXTRA DARK DEPTH SHADOW */
+.hero-image::after{
+content:'';
+position:absolute;
+bottom:-30px;
+left:50%;
+width:80%;
+height:50px;
+transform:translateX(-50%);
+background:rgba(0,0,0,0.6);
+filter:blur(25px);
+z-index:0;
+}
+
+/* ===========================
+   MOBILE OPTIMIZATION
+=========================== */
+@media (max-width:768px){
+
+/* NAV */
+nav{
+padding:14px 18px;
+}
+
+.logo{
+font-size:0.8rem;
+}
+.tag{
+font-size:0.65rem;
+padding:4px 8px;
+}
+nav div:last-child{
+display:none; /* hide HYDERABAD text */
+}
+
+/* HERO SECTION */
+.hero{
+padding-top:100px;
+min-height:auto;
+}
+
+.hero > div{
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:30px !important;
+}
+
+/* IMAGE */
+.hero-image{
+width:280px;
+height:280px;
+}
+
+/* TEXT */
+.hero h1{
+font-size:2.3rem !important;
+line-height:1.05;
+}
+.hero-sub{
+font-size:0.75rem;
+}
+.hero p{
+font-size:0.95rem;
+line-height:1.6;
+max-width:100%;
+padding:0 10px;
+}
+
+/* SECTIONS */
+.section{
+padding:70px 20px;
+}
+
+.label{
+font-size:0.75rem;
+margin-bottom:25px;
+}
+
+/* GRID MOBILE */
+.grid{
+grid-template-columns:1fr !important;
+gap:15px;
+}
+
+.card{
+padding:22px;
+border-radius:18px;
+}
+
+.card h3{
+font-size:1.4rem;
+}
+
+/* EVENTS ROADMAP */
+.events-roadmap{
+height:auto;
+}
+.roadmap-svg{
+display:none;
+}
+.events-roadmap .road-line{
+display:block;
+left:16px;
+right:auto;
+top:0;
+bottom:0;
+width:10px;
+height:auto;
+transform:none;
+}
+.events-roadmap .road-lane{
+display:block;
+left:20px;
+right:auto;
+top:0;
+bottom:0;
+width:0;
+height:auto;
+border-top:0;
+border-left:2px dashed rgba(255,255,255,.45);
+transform:none;
+}
+.roadmap-nodes{
+display:grid;
+gap:16px;
+height:auto;
+padding-left:0;
+}
+.roadmap-node{
+position:relative;
+left:auto;
+top:auto;
+}
+.node-pin{
+left:21px;
+top:18px;
+transform:none;
+}
+.node-card{
+position:relative;
+left:auto;
+top:auto;
+transform:none;
+margin-left:38px;
+max-width:none;
+width:calc(100% - 54px);
+}
+
+/* IMPACT NUMBERS */
+.impact-number{
+font-size:2rem;
+}
+
+/* SKILLS */
+.skill{
+font-size:1.4rem;
+margin-right:25px;
+}
+
+/* LEADERSHIP MOBILE */
+.leadership-card{
+flex-direction:column !important;
+}
+
+.leadership-image{
+width:120px !important;
+height:120px !important;
+font-size:2.2rem !important;
+align-self:flex-start;
+}
+
+.leadership-title{
+font-size:1.1rem !important;
+}
+
+.leadership-org{
+font-size:0.8rem !important;
+}
+
+.leadership-date{
+font-size:0.75rem !important;
+}
+
+.leadership-content p{
+font-size:0.9rem !important;
+}
+
+/* FOOTER */
+footer{
+padding:70px 20px;
+}
+.btn{
+padding:14px 30px;
+font-size:0.9rem;
+}
+
+footer div{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:25px !important;
+}
+
+.footer-socials{
+flex-direction:row;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
+.social-icon{
+width:44px;
+height:44px;
+}
+
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Harish Reddy Duggempudi",
+  "url":"https://harishreddy.me",
+  "jobTitle":"Microsoft Student Ambassador GOLD",
+  "sameAs":[
+    "https://www.linkedin.com/in/harish-reddy-duggempudi",
+    "https://github.com/Student-Nexus-community"
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<div id="progress"></div>
+
+<div class="gradient-orb orb1"></div>
+<div class="gradient-orb orb2"></div>
+<div class="gradient-orb orb3"></div>
+<div class="noise"></div>
+
+<nav>
+<div style="display:flex;align-items:center;">
+<div class="logo">HARISH REDDY • STUDENT NEXUS</div>
+<div class="tag">Microsoft Ambassador GOLD</div>
+</div>
+<div style="font-family:JetBrains Mono;color:var(--muted);font-size:.8rem;">
+HARISHREDDY.DEV
+</div>
+</nav>
+
+<section class="hero">
+<div style="display:flex;align-items:center;gap:60px;flex-wrap:wrap;" data-aos="fade-up">
+
+    <!-- PROFILE IMAGE -->
+    <div class="hero-image">
+        <img src="images/harish-reddy.jpeg" alt="Harish Reddy Duggempudi - Microsoft Student Ambassador GOLD" loading="lazy">
+    </div>
+
+    <!-- TEXT CONTENT -->
+    <div style="flex:1;min-width:300px;">
+        <div class="hero-sub">
+            MICROSOFT STUDENT AMBASSADOR GOLD • FOUNDER • COMMUNITY BUILDER
+        </div>
+
+        <h1>HARISH REDDY<br>DUGGEMPUDI</h1>
+
+        <p style="font-size:1rem;color:#fff;opacity:.8;margin-top:10px;">
+        Building communities where students become tech leaders.
+        </p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
+        <div class="badge">🏆 MLSA GOLD 2026</div>
+        <div class="badge">🚀 Founder — Student Nexus</div>
+        <div class="badge">🎤 10+ Tech Talks</div>
+        <div class="badge" style="color:var(--gold);">🇮🇳 Representing India</div>
+        </div>
+
+
+        <p style="font-family:'JetBrains Mono';font-size:.75rem;color:var(--fabric);margin-bottom:20px;margin-top:10px;">
+        ✦ Available for Speaking • Community Partnerships
+        </p>
+
+        <p>
+        Founder & Community Leader empowering students through AI, Cloud, and innovation-driven learning.
+        Building ecosystems where students learn faster, collaborate deeper, and impact bigger.
+        </p>
+
+        <div style="margin-top:25px;">
+        <a href="#contact" class="btn" style="background:var(--accent);color:#fff;">Work With Me</a>
+        <a href="https://www.linkedin.com/in/harish-reddy-duggempudi" target="_blank" rel="noopener noreferrer" class="btn" style="margin-left:10px;background:transparent;border:2px solid var(--accent);color:var(--accent);">Connect on LinkedIn</a>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+<!-- FOUNDER VISION SECTION -->
+<section class="section">
+<span class="label">// VISION</span>
+<div style="max-width:900px;margin:0 auto;">
+<div class="card span2" data-aos="fade-up">
+<h3 style="font-size:2rem;margin-bottom:20px;">🚀 Building the Future Student Tech Ecosystem</h3>
+<p style="font-size:1.1rem;line-height:1.9;color:var(--muted);">
+My mission is to create platforms and communities where students don't just learn tech — they build, lead, and innovate globally.
+</p>
+<p style="font-size:1rem;margin-top:20px;line-height:1.8;">
+Through Student Nexus, Microsoft Fabric Community, and speaking engagements, I'm proving that students can be architects of their own tech futures. 
+Every workshop, every mentorship, every event is a step toward a world where technical excellence meets compassionate leadership.
+</p>
+<p style="color:var(--accent);font-family:'JetBrains Mono';font-size:.85rem;margin-top:25px;font-weight:600;">
+→ Empowering Students • Building Communities • Driving Innovation
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<span class="label">// LEADERSHIP POSITIONS</span>
+<div class="leadership-grid">
+
+<div class="leadership-card" data-aos="fade-up">
+<div class="leadership-image"><img src="images/student-nexus-logo.png" alt="Student Nexus"></div>
+<div class="leadership-content">
+<div class="leadership-title">Founder & CEO</div>
+<div class="leadership-org">Student Nexus · Self-Founded</div>
+<div class="leadership-date">Aug 2024 - current · 6+ months · Hyderabad</div>
+<div class="leadership-badge">Ecosystem Builder</div>
+<div class="leadership-badge">Community Impact</div>
+<p>Built a student-led innovation platform helping students learn, collaborate, and grow. Organized technical workshops, hackathons, and career-focused sessions impacting thousands of learners.</p>
+</div>
+</div>
+
+<div class="leadership-card" data-aos="fade-up" data-aos-delay="100">
+<div class="leadership-image"><img src="images/microsoft-fabric-hyd-logo.jpg" alt="Microsoft Fabric"></div>
+<div class="leadership-content">
+<div class="leadership-title">User Group Leader</div>
+<div class="leadership-org">Microsoft Fabric Hyderabad · Community</div>
+<div class="leadership-date">Jan 2025 - current · 2+ months · Hyderabad</div>
+<div class="leadership-badge">Data Community</div>
+<div class="leadership-badge">Leadership</div>
+<p>Leading community learning around Microsoft Fabric, analytics, and AI. Organizing expert sessions and building a strong data community ecosystem with 300+ active members.</p>
+</div>
+</div>
+
+
+<div class="leadership-card" data-aos="fade-up" data-aos-delay="300">
+<div class="leadership-image"><img src="images/innovista-logo.jpg" alt="Innovista Hub"></div>
+<div class="leadership-content">
+<div class="leadership-title">President</div>
+<div class="leadership-org">Innovista Hub · College Initiative</div>
+<div class="leadership-date">2024 - current · 3+ months · Hyderabad</div>
+<div class="leadership-badge">Leadership</div>
+<div class="leadership-badge">Innovation Culture</div>
+<p>Driving innovation and entrepreneurship culture through events, workshops, and student initiatives. Building a hub where students can innovate and collaborate.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<span class="label">// CORE EXPERTISE</span>
+<div class="grid">
+
+<div class="card">
+<div class="expertise-icon" style="color:var(--accent);"><i class="fas fa-cloud"></i></div>
+<h3>Cloud & AI</h3>
+<p>Azure • Microsoft Fabric • Copilot • Generative AI Tools</p>
+</div>
+
+<div class="card">
+<div class="expertise-icon" style="color:var(--gold);"><i class="fas fa-users"></i></div>
+<h3>Leadership & Community</h3>
+<p>Workshops • Hackathons • Student Ecosystem Building</p>
+</div>
+
+<div class="card">
+<div class="expertise-icon" style="color:var(--fabric);"><i class="fas fa-code"></i></div>
+<h3>Development</h3>
+<p>JavaScript • Web Development • GitHub • Automation</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<span class="label">// IMPACT HIGHLIGHTS</span>
+<div class="grid">
+
+<div class="card">
+<div class="impact-number" data-target="5000" data-suffix="+">0</div>
+<p>Students Impacted through workshops & community programs.</p>
+</div>
+
+<div class="card">
+<div class="impact-number" data-target="10" data-suffix="+">0</div>
+<p>Tech Events Organized including hackathons & Azure workshops.</p>
+</div>
+
+<div class="card">
+<div class="impact-number" data-target="4" data-suffix="+">0</div>
+<p>Leadership Roles across Microsoft, college, and tech communities.</p>
+</div>
+
+<div class="card">
+<div class="impact-number" data-target="300" data-suffix="+">0</div>
+<p>Active Microsoft Fabric Community Members.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<span class="label">// KEY ACHIEVEMENTS & RECOGNITIONS</span>
+
+<div class="grid">
+
+<div class="card" data-aos="fade-up">
+<img src="images/LevelGold.png" class="achievement-img" alt="MLSA GOLD">
+<div class="badge" style="color:var(--gold)">TOP TIER</div>
+<h3>MICROSOFT STUDENT AMBASSADOR GOLD</h3>
+<p>
+Exceptional community leadership, technical mentoring, and ecosystem impact. Highest MLSA tier achieved.
+</p>
+<div style="margin-top:12px;">
+<a href="https://lnkd.in/gSYYBJVm" target="_blank" rel="noopener noreferrer" style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;text-decoration:none;border-bottom:1px solid var(--gold);">→ View Post</a>
+</div>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<img src="images/arcade.webp" class="achievement-img" alt="Google Arcade">
+<div class="badge" style="color:var(--accent)">RECOGNITION</div>
+<h3>Google Arcade 2024 - Premium Plus Swag</h3>
+<p>
+Google Cloud Arcade Standard Milestone achieved. Explored Compute Engine, Kubernetes, BigQuery, Cloud Functions, VPC, CI/CD, and Pub/Sub. Received exclusive swag kit including hoodie, water bottle, pen set, backpack, diary, and screen cleaner.
+</p>
+<div style="margin-top:15px;">
+<a href="https://lnkd.in/dP9Hzaqq" target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;text-decoration:none;border-bottom:1px solid var(--accent);">→ View LinkedIn Post</a>
+</div>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<img src="images/net-logo-png_seeklogo-441849.png" class="achievement-img" alt=".NET Conference">
+<div class="badge" style="color:var(--gold)">WINNER</div>
+<h3>.NET Conference 2025 - Swag Raffle</h3>
+<p>
+Selected as Swag Raffle winner (Beta) at the .NET Conference 2025. Recognition for community engagement and participation in developer ecosystem events organized by Microsoft.
+</p>
+<div style="margin-top:15px;">
+<a href="https://lnkd.in/gTAfD-ar" target="_blank" rel="noopener noreferrer" style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;text-decoration:none;border-bottom:1px solid var(--gold);">→ View LinkedIn Post</a>
+</div>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<img src="images/fabric data datys.webp" class="achievement-img" alt="Fabric Data Days">
+<div class="badge" style="color:var(--fabric)">WINNER</div>
+<h3>Fabric Data Days - Swag Box</h3>
+<p>
+Recognized as Fabric Data Days Swag Box Winner. Announced during Microsoft Student Ambassadors community call. This represents learning, collaboration, and community impact through Microsoft Fabric platform.
+</p>
+<div style="margin-top:15px;">
+<a href="https://lnkd.in/dSYqqSwV" target="_blank" rel="noopener noreferrer" style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;text-decoration:none;border-bottom:1px solid var(--fabric);">→ View LinkedIn Post</a>
+</div>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="400">
+<img src="images/LevelBeta.png" class="achievement-img" alt="MLSA Beta">
+<div class="badge" style="color:var(--accent)">MILESTONE</div>
+<h3>MSA Beta Swag Kit</h3>
+<p>
+Received Microsoft Student Ambassadors Beta Swag Kit. This package symbolizes the incredible journey of learning, collaboration, and innovation as part of the MLSA program. Recognition of beta status within the global MSA community.
+</p>
+<div style="margin-top:15px;">
+<a href="https://lnkd.in/e7-3_tim" target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;text-decoration:none;border-bottom:1px solid var(--accent);">→ View LinkedIn Post</a>
+</div>
+</div>
+
+</div> <!-- grid -->
+</section>
+
+<!-- FEATURED PROJECTS SECTION -->
+<section class="section" id="projects">
+<span class="label">// FEATURED PROJECTS</span>
+<div class="grid projects-grid">
+
+<div class="card" data-aos="fade-up">
+<img src="images/student-nexus-banner.jpg" class="project-img" alt="Student Nexus Platform">
+<div class="badge" style="color:var(--accent)">FLAGSHIP</div>
+<h3>Student Nexus Platform</h3>
+<p style="font-size:.8rem;color:var(--accent);font-family:'JetBrains Mono';">Role: Founder • Architect • Community Lead</p>
+<p>
+Founded a comprehensive student-led ecosystem combining learning tracks, community events, and peer mentoring.
+Impacted 2000+ students directly with structured career development programs.
+</p>
+<span style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Leadership • Community Building • Ecosystem Design</span>
+<div class="project-links">
+<a href="#" class="project-link live" title="Visit Live Site"><i class="fas fa-globe"></i></a>
+<a href="https://github.com/Student-Nexus-community" target="_blank" rel="noopener noreferrer" class="project-link github" title="View GitHub"><i class="fab fa-github"></i></a>
+</div>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<img src="images/ai-tools-series.jpg" class="project-img" alt="AI Tools for Students">
+<div class="badge" style="color:var(--fabric)">PROJECT</div>
+<h3>AI Tools for Students Series</h3>
+<p style="font-size:.8rem;color:var(--fabric);font-family:'JetBrains Mono';">Stack: JavaScript • Web • GitHub</p>
+<p>
+Launched 8-week workshop series teaching practical AI application using ChatGPT, Claude, and GitHub Copilot.
+Reached 500+ students with hands-on training.
+</p>
+<span style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Frontend • Tech Education • Automation</span>
+<div class="project-links">
+<a href="#" class="project-link live" title="Visit Live Site"><i class="fas fa-globe"></i></a>
+<a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link github" title="View GitHub"><i class="fab fa-github"></i></a>
+</div>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<img src="images/student-nexus-logo.png" class="project-img" alt="Community Dashboard">
+<div class="badge" style="color:var(--gold)">BUILT</div>
+<h3>Community Analytics Dashboard</h3>
+<p style="font-size:.8rem;color:var(--gold);font-family:'JetBrains Mono';">Stack: Azure • Microsoft Fabric • React</p>
+<p>
+Developed real-time analytics dashboard for tracking community metrics, engagement, and member insights.
+Integrated with Azure backend and Fabric data models.
+</p>
+<span style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Full Stack • Data Visualization • Cloud</span>
+<div class="project-links">
+<a href="#" class="project-link live" title="Visit Live Site"><i class="fas fa-globe"></i></a>
+<a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link github" title="View GitHub"><i class="fab fa-github"></i></a>
+</div>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<div class="project-icon" style="color:var(--fabric);"><i class="fas fa-lightbulb"></i></div>
+<div class="badge" style="color:var(--fabric)">GENAI • LEARNING</div>
+<h3>Tech Fact Generator App</h3>
+<p style="font-size:.8rem;color:var(--fabric);font-family:'JetBrains Mono';">Built with Pieces • GenAI • Web Technologies</p>
+<p>
+Innovative app built using Pieces Developer Tool Set to generate engaging tech facts and learning content.
+Demonstrated at GenAI 101 workshop with 100+ participants. Featured as hands-on project with live demo.
+</p>
+<span style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ GenAI • Full Stack • Open Source</span>
+<div class="project-links">
+<a href="https://lnkd.in/gQHnpPKb" target="_blank" rel="noopener noreferrer" class="project-link live" title="Visit Live Site"><i class="fas fa-globe"></i></a>
+<a href="https://lnkd.in/gsxEbE4h" target="_blank" rel="noopener noreferrer" class="project-link github" title="View GitHub"><i class="fab fa-github"></i></a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- INITIATIVES SECTION -->
+<section class="section">
+<span class="label">// INITIATIVES</span>
+<div class="grid">
+
+<div class="card" data-aos="fade-up">
+<div class="initiative-icon" style="color:var(--gold);"><i class="fas fa-code-branch"></i></div>
+<div class="badge">ORGANIZED</div>
+<h3>MLSA x MRCE Hackathon</h3>
+<p>
+Coordinated college-wide hackathon with 200+ participants, 15 technical mentors, and industry partnerships.
+Judges from Microsoft & top tech companies.
+</p>
+<span style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Event Management • Sponsorships</span>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<div class="initiative-icon" style="color:var(--accent);"><i class="fas fa-chart-line"></i></div>
+<div class="badge" style="color:var(--accent)">INITIATIVE</div>
+<h3>Microsoft Fabric Community Sessions</h3>
+<p>
+Built data analytics community with monthly expert sessions, hands-on labs, and career tracks.
+Established Fabric user group with 300+ active members.
+</p>
+<span style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Community Development • Tech Leadership</span>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<div class="initiative-icon" style="color:var(--fabric);"><i class="fas fa-graduation-cap"></i></div>
+<div class="badge" style="color:var(--fabric)">LAUNCHING SOON</div>
+<h3>Student Resource Hub Platform</h3>
+<p>
+Launching an exclusive platform for students bringing everything under one roof — learning materials, tech resources, skill-building tools, and essential study aids. Mission: make student life easier and smarter.
+</p>
+<span style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Student Empowerment • Platform Design • Accessibility</span>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<div class="initiative-icon" style="color:var(--accent);"><i class="fas fa-server"></i></div>
+<div class="badge" style="color:var(--accent)">COMMUNITY EVENT</div>
+<h3>AzureDevDay - Azure Developer Community</h3>
+<p>
+Successfully coordinated AzureDevDay in collaboration with Azure Developer Community and Reskilll at MRCE. Featured sessions on GitHub Copilot, M365 Copilot, building custom Copilots using MS Copilot Studio, and Student Developer Pack opportunities.
+</p>
+<span style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Developer Community • Copilot Innovation • Student Empowerment</span>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="400">
+<div class="initiative-icon" style="color:var(--gold);"><i class="fas fa-rocket"></i></div>
+<div class="badge" style="color:var(--gold)">AMBASSADOR</div>
+<h3>LetsUpgrade Campus Ambassador Program</h3>
+<p>
+Joined LetsUpgrade as Campus Ambassador. Providing access to cutting-edge tech resources in Data Science, Cloud Computing, Full Stack Development, and API fundamentals. Completed Postman API Fundamentals Workshop with certification.
+</p>
+<span style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">→ Tech Upskilling • Campus Ambassador • API Development</span>
+</div>
+
+</div>
+</section>
+
+<!-- SPEAKING & EVENTS SECTION -->
+<section class="section">
+<span class="label">// SPEAKING & EVENTS HOSTED</span>
+
+<div class="events-roadmap" aria-label="Events roadmap">
+<div class="road-line" aria-hidden="true"></div>
+<div class="road-lane" aria-hidden="true"></div>
+
+<svg class="roadmap-svg" viewBox="0 0 1600 480" aria-hidden="true" focusable="false">
+<path class="road-path" d="M 80 100 L 1480 100 C 1540 100, 1540 170, 1480 170 L 120 170 C 60 170, 60 240, 120 240 L 1480 240 C 1540 240, 1540 310, 1480 310 L 120 310 C 60 310, 60 380, 120 380 L 1480 380" />
+<path class="road-dashes" d="M 80 100 L 1480 100 C 1540 100, 1540 170, 1480 170 L 120 170 C 60 170, 60 240, 120 240 L 1480 240 C 1540 240, 1540 310, 1480 310 L 120 310 C 60 310, 60 380, 120 380 L 1480 380" />
+</svg>
+
+<div class="roadmap-nodes">
+
+<div class="roadmap-node" data-aos="fade-up">
+<div class="node-pin">01</div>
+<div class="node-card">
+<div class="node-date">Feb 2024</div>
+<div class="node-title">Fabric Futures: Data & AI Career Launchpad</div>
+<div class="node-location">📍 Online • Fabric Community</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="100">
+<div class="node-pin">02</div>
+<div class="node-card">
+<div class="node-date">Mar 2024</div>
+<div class="node-title">Microsoft Office Hyderabad - First Offline Session</div>
+<div class="node-location">📍 Microsoft Office HYD • 80 Learners</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="200">
+<div class="node-pin">03</div>
+<div class="node-card">
+<div class="node-date">Sep 2024</div>
+<div class="node-title">AzureDev Day Coordination</div>
+<div class="node-location">📍 MRCE • Azure Community</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="300">
+<div class="node-pin">04</div>
+<div class="node-card">
+<div class="node-date">Sep 2024</div>
+<div class="node-title">Engineers Day Quiz</div>
+<div class="node-location">📍 MRCE Campus</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="400">
+<div class="node-pin">05</div>
+<div class="node-card">
+<div class="node-date">Oct 2024</div>
+<div class="node-title">FABRIX INSIDE 2.0 - Full Day Event</div>
+<div class="node-location">📍 Fabric Community Hyderabad</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="500">
+<div class="node-pin">06</div>
+<div class="node-card">
+<div class="node-date">Oct 2024</div>
+<div class="node-title">First Hands-on Workshop - Microsoft Fabric</div>
+<div class="node-location">📍 Fabric User Group • Workshop</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="600">
+<div class="node-pin">07</div>
+<div class="node-card">
+<div class="node-date">Nov 2024</div>
+<div class="node-title">Community Dev Talks</div>
+<div class="node-location">📍 Online • Student Nexus</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="700">
+<div class="node-pin">08</div>
+<div class="node-card">
+<div class="node-date">Dec 2024</div>
+<div class="node-title">GitHub Student Developer Pack Webinar</div>
+<div class="node-location">📍 Online • Student Nexus</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="800">
+<div class="node-pin">09</div>
+<div class="node-card">
+<div class="node-date">Jan 2025</div>
+<div class="node-title">MLSA x MRCE Hackathon Coordination</div>
+<div class="node-location">📍 MRCE • 24-hour Event</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="900">
+<div class="node-pin">10</div>
+<div class="node-card">
+<div class="node-date">Jan 2025</div>
+<div class="node-title">24-hour Hackathon - MLSA x MRCE Chapter</div>
+<div class="node-location">📍 MRCE • Offline Event</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="1000">
+<div class="node-pin">11</div>
+<div class="node-card">
+<div class="node-date">Jan 2025</div>
+<div class="node-title">GenAI 101 with Pieces - Workshop</div>
+<div class="node-location">📍 Online • 100+ Participants</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="1100">
+<div class="node-pin">12</div>
+<div class="node-card">
+<div class="node-date">Feb 2025</div>
+<div class="node-title">Data Visualization: Power BI Masterclass</div>
+<div class="node-location">📍 Fabric Community • Masterclass</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="1200">
+<div class="node-pin">13</div>
+<div class="node-card">
+<div class="node-date">Feb 2025</div>
+<div class="node-title">Mastering GitHub Webinar</div>
+<div class="node-location">📍 Online • 50 Participants</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="1300">
+<div class="node-pin">14</div>
+<div class="node-card">
+<div class="node-date">Mar 2025</div>
+<div class="node-title">AzureDevDay - Microsoft Copilot & GitHub Copilot</div>
+<div class="node-location">📍 MRCE • Azure Community</div>
+</div>
+</div>
+
+<!-- GOLD MILESTONE ANCHOR -->
+<div class="roadmap-node gold-milestone-card" data-aos="fade-up" data-aos-duration="800">
+<div class="node-pin">🏆</div>
+<div class="node-card">
+<div class="node-date">⭐ FEB 2026 • MAJOR MILESTONE</div>
+<div class="node-title">🥇 Microsoft Student Ambassador GOLD</div>
+<div style="font-size:.85rem;color:rgba(255,255,255,.8);margin-top:8px;line-height:1.5;">Achieved highest MLSA tier recognized for exceptional technical leadership, sustained community impact, and ecosystem building.</div>
+<div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(217,119,6,.3);font-size:.75rem;color:var(--gold);font-family:'JetBrains Mono';">✦ Highest Recognition • Community Excellence • Leadership Impact</div>
+</div>
+</div>
+
+<div class="roadmap-node" data-aos="fade-up" data-aos-delay="1400">
+<div class="node-pin">15</div>
+<div class="node-card">
+<div class="node-date">Mar 2026</div>
+<div class="node-title">Mastering GitHub Workshop</div>
+<div class="node-location">📍 MRCE • 120+ Participants</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- TIMELINE/JOURNEY SECTION -->
+<section class="section">
+<span class="label">// MY JOURNEY</span>
+<div style="max-width:900px;margin:auto;" class="timeline-container">
+
+<div style="position:relative;padding-left:40px;margin-bottom:45px;" data-aos="fade-up">
+<div style="position:absolute;left:0;top:5px;width:20px;height:20px;background:var(--accent);border-radius:50%;border:3px solid var(--bg);"></div>
+<div style="font-family:'JetBrains Mono';color:var(--accent);font-weight:600;margin-bottom:5px;">July 2024</div>
+<h3 style="margin:5px 0 8px;font-size:1.3rem;">🚀 Became Microsoft Learn Student Ambassador</h3>
+<p style="color:var(--muted);">Recognized for technical excellence and community initiative, joined MLSA program at MRCE.</p>
+</div>
+
+<div style="position:relative;padding-left:40px;margin-bottom:45px;" data-aos="fade-up" data-aos-delay="100">
+<div style="position:absolute;left:0;top:5px;width:20px;height:20px;background:var(--fabric);border-radius:50%;border:3px solid var(--bg);"></div>
+<div style="font-family:'JetBrains Mono';color:var(--fabric);font-weight:600;margin-bottom:5px;">August 2024</div>
+<h3 style="margin:5px 0 8px;font-size:1.3rem;">🚀 Founded Student Nexus</h3>
+<p style="color:var(--muted);">Launched community platform to empower students through structured learning, mentorship, and career growth.</p>
+</div>
+
+<div style="position:relative;padding-left:40px;margin-bottom:45px;" data-aos="fade-up" data-aos-delay="200">
+<div style="position:absolute;left:0;top:5px;width:20px;height:20px;background:var(--gold);border-radius:50%;border:3px solid var(--bg);"></div>
+<div style="font-family:'JetBrains Mono';color:var(--gold);font-weight:600;margin-bottom:5px;">January 2025</div>
+<h3 style="margin:5px 0 8px;font-size:1.3rem;">📊 Microsoft Fabric User Group Launch</h3>
+<p style="color:var(--muted);">Established data analytics community, organized expert sessions, reached 300+ active members.</p>
+</div>
+
+<div style="position:relative;padding-left:40px;margin-bottom:45px;" data-aos="fade-up" data-aos-delay="250">
+<div style="position:absolute;left:0;top:5px;width:20px;height:20px;background:var(--fabric);border-radius:50%;border:3px solid var(--bg);"></div>
+<div style="font-family:'JetBrains Mono';color:var(--fabric);font-weight:600;margin-bottom:5px;">March 2025</div>
+<h3 style="margin:5px 0 8px;font-size:1.3rem;">💻 First Offline Hackathon with Microsoft Mentors</h3>
+<p style="color:var(--muted);">Conducted first in-person hackathon with Microsoft mentor support and industry guidance.</p>
+</div>
+
+<div style="position:relative;padding:30px 40px;margin-bottom:45px;background:linear-gradient(135deg,rgba(217,119,6,.15) 0%,rgba(217,119,6,.05) 100%);border:2px solid var(--gold);border-radius:16px;box-shadow:0 0 40px rgba(217,119,6,.3);" data-aos="fade-up" data-aos-delay="300">
+<div style="position:absolute;left:-10px;top:50%;transform:translateY(-50%);width:30px;height:30px;background:var(--gold);border-radius:50%;border:4px solid var(--bg);box-shadow:0 0 20px var(--gold);"></div>
+<div style="font-family:'JetBrains Mono';color:var(--gold);font-weight:700;margin-bottom:8px;font-size:.95rem;">⭐ Feb 2026 • MAJOR MILESTONE</div>
+<h3 style="margin:5px 0 12px;font-size:1.6rem;color:var(--gold);">🏆 Microsoft Ambassador Tier GOLD</h3>
+<p style="color:var(--text);line-height:1.7;font-size:1rem;">Achieved highest MLSA tier for sustained impact, ecosystem building, and community growth. Recognized for exceptional technical leadership and creating lasting student impact.</p>
+<div style="margin-top:15px;padding-top:15px;border-top:1px solid rgba(217,119,6,.3);font-size:.85rem;color:var(--gold);font-family:'JetBrains Mono';">
+✦ Highest Recognition Level • Community Excellence • Leadership Impact
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="section testimonials-section" style="background:linear-gradient(135deg,rgba(99,102,241,.08) 0%,rgba(13,148,136,.05) 100%);border-radius:24px;">
+<span class="label">// WHAT PEOPLE SAY</span>
+<div class="testimonials-carousel" id="testimonialCarousel">
+
+<div class="card testimonial-card" style="background:transparent;border:1px solid rgba(255,255,255,.15);" data-aos="fade-up">
+<p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;color:#fff;">
+"Harish brings exceptional energy and authentic leadership to every tech initiative. He's built Student Nexus into a real ecosystem, not just another event."
+</p>
+<div style="display:flex;align-items:center;gap:12px;">
+<img src="images/testimonial-1.jpg" class="testimonial-avatar" alt="Microsoft Community Lead">
+<div>
+<div style="font-weight:600;font-size:.9rem;">Microsoft Community Lead</div>
+<div style="font-size:.75rem;color:var(--muted);">Tech Community Mentor</div>
+</div>
+</div>
+</div>
+
+<div class="card testimonial-card" style="background:transparent;border:1px solid rgba(255,255,255,.15);" data-aos="fade-up" data-aos-delay="100">
+<p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;color:#fff;">
+"The workshops he organized transformed how our college students approach cloud learning. Real impact, real mentorship."
+</p>
+<div style="display:flex;align-items:center;gap:12px;">
+<img src="images/testimonial-2.jpg" class="testimonial-avatar" alt="Faculty Coordinator">
+<div>
+<div style="font-weight:600;font-size:.9rem;">Faculty Coordinator</div>
+<div style="font-size:.75rem;color:var(--muted);">MRCE Engineering</div>
+</div>
+</div>
+</div>
+
+<div class="card testimonial-card" style="background:transparent;border:1px solid rgba(255,255,255,.15);" data-aos="fade-up" data-aos-delay="200">
+<p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;color:#fff;">
+"Harish is a true community builder. He doesn't just talk about tech—he creates spaces where people learn and grow together."
+</p>
+<div style="display:flex;align-items:center;gap:12px;">
+<img src="images/testimonial-3.jpg" class="testimonial-avatar" alt="Startup Founder">
+<div>
+<div style="font-weight:600;font-size:.9rem;">Startup Founder</div>
+<div style="font-size:.75rem;color:var(--muted);">Tech Ecosystem Partner</div>
+</div>
+</div>
+</div>
+
+<div class="card testimonial-card" style="background:transparent;border:1px solid rgba(255,255,255,.15);" data-aos="fade-up" data-aos-delay="300">
+<p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;color:#fff;">
+"His ability to connect AI tools with real-world applications helped our team upskill in just weeks. Harish walks the talk."
+</p>
+<div style="display:flex;align-items:center;gap:12px;">
+<img src="images/testimonial-4.jpg" class="testimonial-avatar" alt="Tech Lead">
+<div>
+<div style="font-weight:600;font-size:.9rem;">Tech Lead</div>
+<div style="font-size:.75rem;color:var(--muted);">Innovation Advocate</div>
+</div>
+</div>
+</div>
+
+<div class="card testimonial-card" style="background:transparent;border:1px solid rgba(255,255,255,.15);" data-aos="fade-up" data-aos-delay="400">
+<p style="font-size:1.05rem;line-height:1.8;margin-bottom:20px;color:#fff;">
+"The Microsoft Fabric community he built has become our go-to source for analytics insights. Harish's leadership raised the bar."
+</p>
+<div style="display:flex;align-items:center;gap:12px;">
+<img src="images/testimonial-5.jpg" class="testimonial-avatar" alt="Data Analyst">
+<div>
+<div style="font-weight:600;font-size:.9rem;">Data Analyst</div>
+<div style="font-size:.75rem;color:var(--muted);">Microsoft Ecosystem</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="skills">
+<div class="skills-track">
+<span class="skill active">AZURE CLOUD</span>
+<span class="skill">MICROSOFT FABRIC</span>
+<span class="skill active">GEN-AI TOOLS</span>
+<span class="skill">COMMUNITY LEADERSHIP</span>
+<span class="skill active">PUBLIC SPEAKING</span>
+<span class="skill">SOFTWARE DEVELOPMENT</span>
+<span class="skill active">EVENT MANAGEMENT</span>
+</div>
+<div class="skills-track">
+<span class="skill active">AZURE CLOUD</span>
+<span class="skill">MICROSOFT FABRIC</span>
+<span class="skill active">GEN-AI TOOLS</span>
+<span class="skill">COMMUNITY LEADERSHIP</span>
+<span class="skill active">PUBLIC SPEAKING</span>
+<span class="skill">SOFTWARE DEVELOPMENT</span>
+<span class="skill active">EVENT MANAGEMENT</span>
+</div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section class="section">
+<span class="label">// EDUCATION</span>
+<div class="grid">
+
+<div class="card" data-aos="fade-up">
+<img src="images/MRCE-LOGO.jpg" class="edu-logo" alt="MRCE">
+<div class="badge" style="color:var(--accent)">DEGREE</div>
+<h3>Bachelor of Technology</h3>
+<p style="margin-bottom:12px;font-size:.95rem;">
+Computer Science & Engineering (Data Science)
+</p>
+<p style="color:var(--muted);font-size:.85rem;margin-bottom:12px;">Specialization: Data Science | AI & Cloud Enthusiast</p>
+<p style="color:var(--accent);font-family:'JetBrains Mono';font-size:.85rem;font-weight:600;">
+MRCE • Hyderabad
+</p>
+<p style="color:var(--muted);font-size:.9rem;margin-top:10px;">
+2022 - 2026<br>4th Year<br>Graduation: June 2026
+</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<img src="images/hyderabad-board.png" class="edu-logo" alt="Hyderabad Board">
+<div class="badge" style="color:var(--fabric)">INTERMEDIATE</div>
+<h3>12th Grade</h3>
+<p style="margin-bottom:12px;font-size:.95rem;">
+MPC (Mathematics, Physics, Chemistry)
+</p>
+<p style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.85rem;font-weight:600;">
+Hyderabad Board
+</p>
+<p style="color:var(--muted);font-size:.9rem;margin-top:10px;">
+2020 - 2022<br>81% Score<br>Completed
+</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<img src="images/ssc-board.png" class="edu-logo" alt="SSC Board">
+<div class="badge" style="color:var(--gold)">HIGH SCHOOL</div>
+<h3>10th Grade</h3>
+<p style="margin-bottom:12px;font-size:.95rem;">
+SSC (State Board)
+</p>
+<p style="color:var(--gold);font-family:'JetBrains Mono';font-size:.85rem;font-weight:600;">
+Hyderabad
+</p>
+<p style="color:var(--muted);font-size:.9rem;margin-top:10px;">
+2020<br>85% GPA<br>Completed
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATIONS & CREDENTIALS SECTION -->
+<section class="section">
+<span class="label">// CERTIFICATIONS & CREDENTIALS</span>
+<div class="grid">
+
+<div class="card" data-aos="fade-up">
+<div class="card-logo gold">MLSA</div>
+<div class="badge" style="color:var(--gold)">VERIFIED 2026</div>
+<h3>Microsoft Learn Student Ambassador</h3>
+<p>
+Renewed & Officially Verified as Microsoft Student Ambassador 2026 (Beta). Reflects consistency, meaningful contributions, and strong community-driven tech impact.
+</p>
+<p style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Verified Credly Badge • Global MSA Community</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<div class="card-logo accent">AI</div>
+<div class="badge" style="color:var(--accent)">BADGE</div>
+<h3>Explore AI Level 1</h3>
+<p>
+Earned from Microsoft Most Valuable Professionals & Microsoft Student Ambassadors programs. Recognition for AI learning journey and community contribution.
+</p>
+<p style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Digital Badge • Credly • AI Journey</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<div class="card-logo fabric">SEC</div>
+<div class="badge" style="color:var(--fabric)">PROFESSIONAL</div>
+<h3>Microsoft Security Essentials</h3>
+<p>
+Microsoft & LinkedIn Learning Professional Certificate. Comprehensive coverage of Microsoft Security, Governance/Risk/Compliance (GRC), and Cloud Security.
+</p>
+<p style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">LinkedIn Learning • Digital Security</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<div class="card-logo gold">AZURE</div>
+<div class="badge" style="color:var(--gold)">AI ESSENTIALS</div>
+<h3>Microsoft Azure AI Essentials</h3>
+<p>
+Microsoft & LinkedIn Learning Professional Certificate. Deep dive into Machine Learning 🤖 and Azure AI Studio 🛠️. Ready to apply these skills in real-world scenarios.
+</p>
+<p style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">LinkedIn Learning • Azure AI</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="400">
+<div class="card-logo fabric">INTERN</div>
+<div class="badge" style="color:var(--fabric)">PROGRAM</div>
+<h3>AI Azure Internship Program</h3>
+<p>
+Edunet Foundation x Microsoft x AICTE. 4-week hands-on program covering AI, Machine Learning, Gen-AI, and Azure technologies guided by expert mentors with real-world problem statements.
+</p>
+<p style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Edunet Foundation • Microsoft • AICTE</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="500">
+<div class="card-logo accent">GCP</div>
+<div class="badge" style="color:var(--accent)">MILESTONE</div>
+<h3>Google Arcade 2024 - Premium Plus</h3>
+<p>
+Google Cloud Arcade Standard Milestone achieved. Explored Compute Engine, Kubernetes, BigQuery, Cloud Functions, VPC, CI/CD, and Pub/Sub. Hands-on cloud learning experience.
+</p>
+<p style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Google Cloud • Quicklabs Journey</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="600">
+<div class="card-logo fa">FA</div>
+<div class="badge" style="color:var(--fabric)">ACHIEVEMENT</div>
+<h3>Google Cloud</h3>
+<p>
+GitHub Copilot Learning Path • Cloud Labs
+</p>
+<p style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Facilitator 2024</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="700">
+<div class="card-logo gold">ALPHA</div>
+<div class="badge" style="color:var(--gold)">PROMOTION</div>
+<h3>MLSA Beta to Alpha Promotion</h3>
+<p>
+Promoted to Microsoft Learn Student Ambassador Alpha milestone. This new tier opens exciting opportunities to explore Azure, AI, and Data Science while empowering communities through workshops, events, and mentorship.
+</p>
+<p style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Microsoft Learn • Alpha Milestone • Leadership</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="800">
+<div class="card-logo fabric">POSITION</div>
+<div class="badge" style="color:var(--fabric)">ROLE</div>
+<h3>MLSA-Alpha Position at Microsoft</h3>
+<p>
+Started new position as Microsoft Learn Student Ambassador-Alpha. This role includes opportunities to collaborate on cutting-edge AI, Azure, and Data Science technologies while empowering students globally and contributing to community growth.
+</p>
+<p style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Microsoft • MLSA • Alpha Track</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="900">
+<div class="card-logo accent">API</div>
+<div class="badge" style="color:var(--accent)">CERTIFICATION</div>
+<h3>Postman API Fundamentals</h3>
+<p>
+Completed Postman API Fundamentals Workshop on LetsUpgrade with Ali Mustufa. Mastered RESTful API architecture, request management, test automation, and team collaboration using Postman.
+</p>
+<p style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:10px;">Postman • LetsUpgrade • API Development</p>
+</div>
+
+</div>
+</section>
+
+<!-- RESOURCES & PUBLICATIONS SECTION -->
+<section class="section">
+<span class="label">// RESOURCES & PUBLICATIONS</span>
+<div class="grid">
+
+<div class="card" data-aos="fade-up">
+<div style="width:100%;height:180px;background:linear-gradient(135deg,#6366f1 0%,#4f46e5 100%);border-radius:12px;margin-bottom:20px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:40px;font-size:2rem;font-weight:800;color:white;position:relative;">
+<div>📘 Azure AI</div>
+<div class="badge" style="color:white;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.3);position:absolute;bottom:15px;left:15px;font-size:.7rem;">TECHNICAL BLOG</div>
+</div>
+<h3>Azure AI Foundry Revolutionizing</h3>
+<p>
+In-depth technical blog exploring Azure AI Foundry — a powerful platform revolutionizing AI development with pre-trained models, seamless integrations, and enterprise-grade security. Covers key features, benefits, and why it's a game-changer for AI developers.
+</p>
+<span style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">
+→ Azure • AI • DevOps • Published on Azure Developer Community
+</span>
+<a href="https://techcommunity.microsoft.com/" target="_blank" rel="noopener" class="btn" style="background:var(--accent);color:#fff;margin-top:20px;display:inline-block;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .3s;">Read Article →</a>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<div style="width:100%;height:180px;background:linear-gradient(135deg,#0d9488 0%,#0f766e 100%);border-radius:12px;margin-bottom:20px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:40px;font-size:2rem;font-weight:800;color:white;position:relative;">
+<div>🗺️ MSA Journey</div>
+<div class="badge" style="color:white;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.3);position:absolute;bottom:15px;left:15px;font-size:.7rem;">COMPREHENSIVE GUIDE</div>
+</div>
+<h3>MSA Progression Flowchart - Interactive PDF</h3>
+<p>
+Created an interactive PDF flowchart guide explaining the complete Microsoft Student Ambassador (MSA) journey end-to-end. Includes registration timeline, mandatory requirements, contributor ID flow, community pathways (Influencer/Skiller), eligibility for quarterly onboarding, and progress update timelines. Each step links to official resources.
+</p>
+<span style="color:var(--fabric);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">
+→ Helpful for aspiring MSAs • Career Guidance • Community Resource
+</span>
+<a href="#" target="_blank" rel="noopener" class="btn" style="background:var(--fabric);color:#fff;margin-top:20px;display:inline-block;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .3s;">Download PDF →</a>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<div style="width:100%;height:180px;background:linear-gradient(135deg,#d97706 0%,#b45309 100%);border-radius:12px;margin-bottom:20px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:40px;font-size:2rem;font-weight:800;color:white;position:relative;">
+<div>🤖 GenAI 101</div>
+<div class="badge" style="color:white;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.3);position:absolute;bottom:15px;left:15px;font-size:.7rem;">LEARNING RESOURCE</div>
+</div>
+<h3>GenAI 101 with Pieces Workshop & Certificate</h3>
+<p>
+Hosted comprehensive GenAI 101 online workshop in collaboration with Student Nexus and Pieces for Developers. Demonstrated real-world AI applications with 100+ participants. Earned badge & certificate from workshop. Shared Tech Fact Generator app built using Pieces tools as practical hands-on project example.
+</p>
+<span style="color:var(--gold);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">
+→ GenAI Education • Workshop Leadership • Developer Tools
+</span>
+<a href="https://pieces.app/" target="_blank" rel="noopener" class="btn" style="background:var(--gold);color:#fff;margin-top:20px;display:inline-block;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .3s;">View Workshop →</a>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<div style="width:100%;height:180px;background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%);border-radius:12px;margin-bottom:20px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:40px;font-size:2rem;font-weight:800;color:white;position:relative;">
+<div>🎓 MLSA Guide</div>
+<div class="badge" style="color:white;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.3);position:absolute;bottom:15px;left:15px;font-size:.7rem;">COMPREHENSIVE GUIDE</div>
+</div>
+<h3>How to Become an MLSA - Complete Guide</h3>
+<p>
+Published detailed comprehensive blog guiding aspiring Microsoft Learn Student Ambassadors through every step. Covers eligibility criteria, application process, selection tips, updated insights for 2024+, and multiple pathways (Community Influencer, Community Skiller). Essential resource for students looking to launch their tech leadership journey.
+</p>
+<span style="color:var(--accent);font-family:'JetBrains Mono';font-size:.75rem;margin-top:15px;display:block;">
+→ Career Guidance • Student Leadership • Community Resource
+</span>
+<a href="#" target="_blank" rel="noopener" class="btn" style="background:var(--accent);color:#fff;margin-top:20px;display:inline-block;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .3s;">Read Guide →</a>
+</div>
+
+</div>
+</section>
+
+<footer id="contact">
+<img src="images/harish-reddy-mini.jpg" class="footer-avatar" alt="Harish Reddy">
+
+<!-- PREMIUM CTA SECTION -->
+<div style="max-width:800px;margin:0 auto 60px;padding:60px;background:linear-gradient(135deg,rgba(99,102,241,.12) 0%,rgba(13,148,136,.08) 100%);border:1px solid var(--border);border-radius:24px;text-align:center;" data-aos="fade-up">
+<h2 style="font-size:2rem;margin-bottom:15px;font-weight:800;">Let's Build Something Impactful</h2>
+<p style="color:var(--muted);margin-bottom:35px;line-height:1.7;">
+Whether you want to collaborate on a project, have me speak at your event, or explore community partnerships — I'm always open to conversations that create impact.
+</p>
+<div style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;">
+<a href="mailto:harishreddy2k05@gmail.com" class="btn" style="background:var(--accent);color:#fff;">Work With Me</a>
+<a href="mailto:harishreddy2k05@gmail.com?subject=Speaking%20Inquiry" class="btn" style="background:transparent;border:2px solid var(--accent);color:var(--accent);">Invite to Speak</a>
+<a href="mailto:harishreddy2k05@gmail.com?subject=Community%20Partnership" class="btn" style="background:transparent;border:2px solid var(--fabric);color:var(--fabric);">Community Partnership</a>
+</div>
+</div>
+
+<!-- FOOTER LINKS -->
+<p style="margin-bottom:30px;font-family:'JetBrains Mono';font-size:1rem;font-weight:700;">
+MICROSOFT STUDENT AMBASSADOR GOLD • FOUNDER • SPEAKER
+</p>
+
+<p style="margin-bottom:40px;font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.6;">
+Trusted by Student Communities • Microsoft Ecosystem • Tech Leaders & Industry Partners
+</p>
+
+<p style="opacity:.8;font-size:.85rem;margin-bottom:20px;">
+📩 Open for Speaking • Mentorship • Partnerships
+</p>
+
+<!-- SOCIAL MEDIA ICONS -->
+<div class="footer-socials" style="display:flex;justify-content:center;gap:25px;margin-bottom:40px;">
+<a href="https://www.instagram.com/harish_reddy_" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Follow on Instagram">
+<i class="fab fa-instagram" style="font-size:1.3rem;"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/harish-reddy-duggempudi" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" title="Connect on LinkedIn">
+<i class="fab fa-linkedin-in" style="font-size:1.3rem;"></i>
+</a>
+
+<a href="https://github.com/Student-Nexus-community" target="_blank" rel="noopener noreferrer" class="social-icon github" title="Visit on GitHub">
+<i class="fab fa-github" style="font-size:1.3rem;"></i>
+</a>
+
+<a href="mailto:harishreddy2k05@gmail.com" class="social-icon email" title="Send an email">
+<i class="fas fa-envelope" style="font-size:1.3rem;"></i>
+</a>
+
+<a href="https://twitter.com/harish_reddy_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Follow on X/Twitter">
+<i class="fab fa-twitter" style="font-size:1.3rem;"></i>
+</a>
+</div>
+
+<div style="border-top:1px solid var(--border);padding-top:30px;margin-top:30px;">
+<p style="color:#777;font-size:.7rem;">
+© <span id="footerYear"></span> HARISH REDDY DUGGEMPUDI • CRAFTED WITH VISION & PURPOSE
+</p>
+</div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+// Initialize AOS with proper settings
+AOS.init({
+  duration: 800,
+  once: true,
+  offset: 100,
+  easing: 'ease-out-cubic'
+});
+
+// Refresh AOS after a short delay to catch all elements
+setTimeout(() => {
+  AOS.refresh();
+}, 500);
+
+// Combined scroll handler for progress bar and navbar
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  
+  // Progress bar
+  const sc = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  const progress = document.getElementById('progress');
+  if (progress) progress.style.width = `${sc}%`;
+
+  // Navbar shrink
+  const nav = document.querySelector('nav');
+  if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Impact number count-up
+const impactNumbers = document.querySelectorAll('.impact-number[data-target]');
+if (impactNumbers.length) {
+  const animateCount = (el) => {
+    const target = Number(el.dataset.target || 0);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min(1, (now - start) / duration);
+      const value = Math.floor(progress * target);
+      el.textContent = `${value}${suffix}`;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  impactNumbers.forEach((el) => observer.observe(el));
+}
+
+// Position roadmap nodes (disabled - using CSS Grid now)
+function positionRoadmapNodes() {
+  // Grid layout handles positioning now
+  return;
+}
+
+window.addEventListener('load', positionRoadmapNodes);
+window.addEventListener('resize', positionRoadmapNodes);
+
+// 3D HERO IMAGE MOUSE EFFECT - DISABLED
+
+// AUTO-SCROLL TESTIMONIALS CAROUSEL - INFINITE LOOP
+const carousel = document.getElementById('testimonialCarousel');
+if (carousel) {
+  let currentIndex = 0;
+  const cards = carousel.querySelectorAll('.testimonial-card');
+  const totalCards = cards.length;
+  let autoScrollInterval;
+  
+  // Get card width dynamically
+  function getCardScrollWidth() {
+    const card = cards[0];
+    const style = window.getComputedStyle(card);
+    const cardWidth = card.offsetWidth;
+    const gap = parseInt(style.marginRight) || 20;
+    return cardWidth + gap;
+  }
+  
+  function autoScroll() {
+    const scrollWidth = getCardScrollWidth();
+    carousel.scrollLeft = currentIndex * scrollWidth;
+    // Loop infinitely: when reaching end, go back to start
+    currentIndex = (currentIndex + 1) % totalCards;
+  }
+  
+  // Start infinite auto-scroll (4 seconds per slide)
+  autoScrollInterval = setInterval(autoScroll, 4000);
+  
+  // Restart on hover (never stops, just restarts timer)
+  carousel.addEventListener('mouseenter', () => {
+    clearInterval(autoScrollInterval);
+    autoScrollInterval = setInterval(autoScroll, 4000);
+  });
+}
+
+// Footer year auto-update
+const footerYear = document.getElementById('footerYear');
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
+</script>
+
+</body>
+</html>
